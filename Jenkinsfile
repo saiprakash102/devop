@@ -1,17 +1,17 @@
-def gv
+///def gv
 pipeline {
     agent any 
     tools {
         maven "maven"
     }
     stages {
-        stage("init") {
-            steps{ 
-                script{
-                    gv = load "scirpt.groovy"
-                }
-            }
-        }
+        ///stage("init") {
+            ///steps{ 
+                ///script{
+                    ////gv = load "scirpt.groovy"
+                ///}
+            //}
+        ///}
         stage("build jar") {
             steps{
                 script{
